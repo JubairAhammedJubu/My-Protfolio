@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta description="Juma Chaje Portfolio" content="projects done by Juma Chaje, about, and contacts." />
+  <title>Jubair | Personal Portfolio Website</title>
+  <link rel="shortcut icon" type="image/png" href="images/juma1.png" />
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+
+</head>
+
+<body>
+  <div class="preloader" id="preloader">
+    <div class="counter" id="counter">0</div>
+
+    <div class="text" id="text">
+      Welcome To <span>Jubair...</span>
+    </div>
+
+    <div class="nameBox" id="nameBox">
+      <p>What name shall I call you?</p>
+      <input id="nameInput" type="text" value="My Guest">
+      <button id="nameBtn">OK</button>
+    </div>
+  </div>
+
+  <header id="header">
+    <div class="logo">
+      <h1>Jubair<span> Ahammed</span></h1>
+    </div>
+    <div class="menu">
+      <div id="menu_btn">
+        <p onclick="toggleMenu(this);"><i class="fa fa-bars"></i></p>
+      </div>
+      <nav>
+        <ul id="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="section_1">
+
+      <div class="part_2">
+        <p>
+          Hello, <span class="visitor"></span><br />
+          My name is <br /><b><q><i>Jubair Ahammed </i></q></b> <br />And I'm a :
+        </p>
+
+        <div class="typing_part">
+          <p><span class="typing"></span></p>
+        </div>
+
+        <a href="#contact"><button class="btn">
+            Hire Me <i class="fa fa-arrow-down" id="down"></i></button></a>
+      </div>
+
+      <div class="part_1">
+        <img src="images/jubu.png" alt="Jubu Image" />
+      </div>
+
+    </section>
+
+    <section id="about">
+      <div class="part_1">
+        <h2>About Me</h2>
+      </div>
+      <div class="part_2">
+        <div class="image_part">
+          <img src="images/bg2.png" alt="Jubu Image 2" />
+        </div>
+
+        <div class="info">
+          <h3>I'm Jubair & I’m a:</h3>
+          <marquee>
+            Computer Science student · Aspiring Web Developer · Frontend Developer · React and Node.js Learner ·
+            Networking Enthusiast
+          </marquee>
+          <p>
+            In my circle, I go by <q>Jubair</q> — a name that mirrors my enthusiasm for creating engaging web
+            experiences.
+            With a strong foundation in Computer Science and hands-on expertise in modern web technologies, I thrive on
+            building responsive applications, solving real-world problems through code, and crafting intuitive user
+            interfaces.
+
+            Whether I’m working remotely or collaborating in a team environment, I bring dedication, creativity, and a
+            growth mindset to every project. From HTML, CSS, and JavaScript to React and Node.js, I enjoy exploring new
+            technologies and pushing the boundaries of what web applications can do.
+
+            Thanks for visiting my portfolio — I’d love to connect and see how we can build something amazing together,
+            <b><span class="visitor"></span></b>!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="part_1">
+        <h2>My Services</h2>
+      </div>
+
+      <div class="part_2">
+        <div class="box">
+          <h4>Frontend Development</h4>
+          <p>
+            I craft <b>clean, responsive UI layouts</b> using HTML, CSS, JavaScript, and Tailwind CSS, designing
+            digital experiences that work seamlessly across desktop, tablet, and mobile while optimizing
+            performance for speed and smooth interactions.
+          </p>
+        </div>
+
+        <div class="box">
+          <h4>Full Stack Web Development</h4>
+          <p>
+            Currently learning <b>React</b> and <b>Node.js</b>, I develop scalable, dynamic web applications that
+            combine frontend
+            design with backend functionality, creating end-to-end solutions for real-world problems.
+          </p>
+        </div>
+
+        <div class="box">
+          <h4>Version Control & Collaboration</h4>
+          <p>
+            I manage project code with <b>Git and GitHub</b>, collaborating effectively on team projects and
+            contributing to open-source initiatives to ensure smooth workflow and project continuity.
+          </p>
+        </div>
+
+        <div class="box">
+          <h4>Problem Solving & Optimization</h4>
+          <p>
+            I debug and improve web performance through <b>CSS optimization, image compression</b>, and
+            efficient coding, solving real-world problems with smart, technical solutions.
+          </p>
+        </div>
+
+        <div class="box">
+          <h4>Project Expertise</h4>
+          <p>
+            Experienced in developing <b>projects like GitHub Issues Tracker</b> with API-based data fetching,
+            search functionality, and responsive dashboards, along with multiple academic and personal
+            projects including dashboards, websites, and software applications.
+          </p>
+        </div>
+        <div class="box">
+          <h4>Learning & Innovation</h4>
+          <p>
+            I am dedicated to <b>exploring new technologies</b> and continuously enhancing my skills, staying updated
+            with modern web trends, frameworks, and tools to create innovative and efficient digital solutions.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="skills">
+      <div class="part_1">
+        <h2>My Skills</h2>
+      </div>
+
+      <div class="part_2">
+        <div class="info">
+          <h3>My Technical & Creative Expertise:</h3>
+          <p>
+            I have experience building and maintaining web applications with a focus on user experience,
+            problem-solving, and
+            teamwork. I adapt designs across devices, manage projects efficiently, and integrate solutions to deliver
+            high-quality
+            results.I am comfortable working in collaborative environments, effectively communicating ideas
+            The shown is a summary of my core competencies:
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="skills">
+            <div class="skill-name">HTML & CSS</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="90%" id="skill" style="max-width: 90%"></div>
+            </div>
+
+            <div class="skill-name">Tailwind CSS</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="85%" id="skill" style="max-width: 85%"></div>
+            </div>
+
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="80%" id="skill" style="max-width: 80%"></div>
+            </div>
+
+
+            <div class="skill-name">PHP</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="75%" id="skill" style="max-width: 75%"></div>
+            </div>
+
+            <div class="skill-name">SQL & Database Management</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="75%" id="skill" style="max-width: 75%"></div>
+            </div>
+
+          </div>
+
+          <div class="button">
+            <button class="btn" id="more_btn">
+              More Skills <i class="fa fa-arrow-down" id="down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="part_3" id="more_card" style="display: none">
+        <div class="card">
+
+          <div class="skill-name">ReactJs</div>
+          <div class="skill-bar">
+            <div class="skill-per" per="10%" id="skill" style="max-width: 10%"></div>
+          </div>
+
+          <div class="skill-name">REST Api</div>
+          <div class="skill-bar">
+            <div class="skill-per" per="50%" id="skill" style="max-width: 50%"></div>
+          </div>
+
+          <div class="skill-name">NextJs</div>
+          <div class="skill-bar">
+            <div class="skill-per" per="10%" id="skill" style="max-width: 10%"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="part_1">
+        <h2>My Projects</h2>
+      </div>
+
+      <div class="filter_bar">
+        <ul>
+          <li onclick="handleFilter(this,'all')">
+            All <span class="project_count count_all">0</span>
+          </li>
+          <li onclick="handleFilter(this,'landing_page')">
+            Landing Pages <span class="project_count count_landing">0</span>
+          </li>
+          <li onclick="handleFilter(this,'api')">
+            API's <span class="project_count count_api">0</span>
+          </li>
+          <li onclick="handleFilter(this,'mobile')">
+            Mobile <span class="project_count count_mobile">0</span>
+          </li>
+          <li onclick="handleFilter(this,'personal_project')">
+            Personal Projects <span class="project_count count_personal">0</span>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="filter_bar mobile">
+        <select class="custom_select" onchange="handleFilter(this, this.value)">
+          <option value="all">All</option>
+          <option value="landing_page">Landing Pages</option>
+          <option value="api">API's</option>
+          <option value="mobile">Mobile</option>
+          <option value="personal_project">Personal Projects</option>
+        </select>
+      </div>
+
+      <div class="part_2">
+        <div class="loading_screen">
+          <div class="boxLoading"></div>
+        </div>
+
+        <div class="container">
+          <!--- Projects will be dynamically shown from local json data--->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="part_1">
+        <h2>Contact me</h2>
+      </div>
+
+      <div class="part_2">
+        <div class="info">
+          <h3>Get in Touch</h3>
+          <p>
+            Hi there, <span class="visitor"></span> ! Hope you liked the view.
+            If you have any projects or services, feel free to contact me.
+            I’ll respond quickly.
+          </p>
+          <p>
+            Even just to say hi, I’d love to hear from you. Let’s have a coffee!
+          </p>
+
+          <ul>
+            <li>
+              <i class="fa fa-user"></i>
+              <h4>Name</h4>
+              <p>Jubair Ahammed</p>
+            </li>
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <h4>Address</h4>
+              <p>Siddhirgonj, Narayangonj</p>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <h4>Phone</h4>
+              <p>+8801516523301</p>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <h4>Email</h4>
+              <p>smjubairahammed2580@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact_form">
+          <h3>Say Hello :</h3>
+
+          <form class="cform">
+
+            <div class="input-data">
+              <input type="text" name="name" required="">
+              <label>Full Name</label>
+              <div class="line"></div>
+            </div>
+
+            <div class="input-data">
+              <input type="email" name="email" required="">
+              <label>Your Email</label>
+              <div class="line"></div>
+            </div>
+
+            <div class="input-data">
+              <input type="text" name="subject" required="">
+              <label>The Subject</label>
+              <div class="line"></div>
+            </div>
+
+            <div class="input-data">
+              <textarea name="msg" required=""></textarea>
+              <label>Your Message</label>
+              <div class="line1"></div>
+            </div>
+
+            <div class="input-data">
+              <button class="btn" name="send" type="submit">Send Message <i class="fa fa-arrow-right"></i></button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+      </div>
+
+      <section id="section_7">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.4206788048633!2d90.51162626952812!3d23.687301998669597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b7006221c099%3A0xa301a6b8fc4c8b59!2z4Kas4Ka_4Ka44Kau4Ka_4Kay4KeN4Kay4Ka-4Ka5IOCmqOCngOCmoeCmvA!5e0!3m2!1sen!2sbd!4v1773577488066!5m2!1sen!2sbd"
+          width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+    </section>
+
+    <!---Sidebar items of social media icons--->
+    <div id="sidebar">
+      <div id="sidebar_items">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/share/1CYCQoJzyy/" target="_blank"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/jubair____jubu?igsh=NDRiYTM0ZjN3cTcy" target="_blank"><i
+                class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jubairahammed" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/JubairAhammedJubu" target="_blank"><i class="fa fa-github"></i></a>
+          </li>
+          <li>
+            <a href="https://wa.me/+8801516523301" target="_blank"><i class="fa fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <footer id="footer">
+
+      <p>Jubair &copy 2026 All rights reserved</p>
+
+      <div id="top">
+        <p>
+          <a href="#section_1"><i class="fa fa-arrow-up"></i></a>
+        </p>
+      </div>
+    </footer>
+  </main>
+  <script src="script/script.js"></script>
+</body>
+
+</html>

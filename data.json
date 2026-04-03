@@ -1,0 +1,98 @@
+  [
+    {
+      "id": 1,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/My-Website/main/Images/image-1.jpg",
+      "title": "TechNexus University",
+      "info": "A responsive educational website that showcases various professional and digital skill development courses....",
+      "link": "https://technexusjubair.infinityfreeapp.com/",
+      "type": "personal_project"
+    },
+    {
+      "id": 2,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/Support-Hero_SESA-Lab-Project/main/Juabir_Files/Jubair_Files/icon/Supporthome.png",
+      "title": "Support Hero",
+      "info": "A community-driven platform where users can create and accept support services, donate transparently, and help build a network of trust and assistance...",
+      "link": "https://group-07.infinityfreeapp.com/",
+      "type": "personal_project"
+    },
+    {
+      "id": 3,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/B13-A1-by-Jubair/main/assets/ass1landing.png",
+      "title": "Personal Knowledge Vault",
+      "info": "A simple assignment landing page showcasing basic front-end development skills with static layout and structured sections....",
+      "link": "https://jubairahammedjubu.github.io/B13-A1-by-Jubair/",
+      "type": "landing_page"
+    },
+    {
+      "id": 4,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/G3-Arcitect-Website/main/images/icons/g3shot.png",
+      "title": "G3 Architects",
+      "info": "A modern architecture company landing page built with HTML and CSS. The website showcases company features, team members, and services with a clean layout....",
+      "link": "https://jubairahammedjubu.github.io/G3-Arcitect-Website/",
+      "type": "landing_page"
+    },
+    {
+      "id": 5,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/Practice-Protfolio/main/images/protfolioshot.png",
+      "title": "Practice Protfolio",
+      "info": "A simple personal portfolio website built with HTML and CSS to showcase basic web development skills, personal information, and project sections with a clean and responsive layout.",
+      "link": "https://jubairahammedjubu.github.io/Practice-Protfolio/",
+      "type": "landing_page"
+    },
+    {
+      "id": 6,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/B13-A02-by-Jubair/main/assets/UI/techwaveshot.png",
+      "title": "TechWave",
+      "info": "A responsive landing page with modern UI sections, clean layout, and fundamental HTML/CSS design showcasing structured, mobile‑friendly front‑end design.",
+      "link": "https://jubairahammedjubu.github.io/B13-A02-by-Jubair/",
+      "type": "landing_page"
+    },
+    {
+      "id": 7,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/Payoo/main/ui/Cashout.png",
+      "title": "Payoo App",
+      "info": "A simple and responsive site that provides past paper booklets for students, displaying fees for each booklet. Developed using only HTML, CSS, and JavaScript.",
+      "link": "https://jubairahammedjubu.github.io/Payoo/",
+      "type": "mobile"
+    },
+    {
+      "id": 8,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/B13-A04-by-Jubair/main/jobshot.png",
+      "title": "Job Application Tracker",
+      "info": "A responsive landing page built with HTML and CSS featuring a clean layout and modern design to showcase job‑related content and UI elements..",
+      "link": "https://jubairahammedjubu.github.io/B13-A04-by-Jubair/",
+      "type": "personal_project"
+    },
+    {
+      "id": 9,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/English_JanalLa/main/assets/janalashot.png",
+      "title": "English জানালা",
+      "info": "An educational site built with HTML, CSS & JavaScript to help users learn basic English with interactive content.",
+      "link": "https://jubairahammedjubu.github.io/English_JanalLa/",
+      "type": "api"
+    },
+    {
+      "id": 10,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/English_JanalLa/main/assets/janalashot.png",
+      "title": "English জানালা",
+      "info": "An educational site built with HTML, CSS & JavaScript to help users learn basic English with interactive content.",
+      "link": "https://jubairahammedjubu.github.io/English_JanalLa/",
+      "type": "api"
+    },
+    {
+      "id": 11,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/B13-A5-by-Jubair/main/assets/ass5shot.png",
+      "title": "GitHub Issues Tracker",
+      "info": "A responsive front-end web project showcasing modern UI design, clean layout structure, and basic web development skills using HTML, CSS, and JavaScript with loader.",
+      "link": "https://jubairahammedjubu.github.io/B13-A5-by-Jubair/",
+      "type": "api"
+    },
+    {
+      "id": 12,
+      "screenshot": "https://raw.githubusercontent.com/JubairAhammedJubu/My-Protfolio/main/images/myprotfolioshot.png",
+      "title": "Jubair Personal Protfolio",
+      "info": "In my personal portfolio website,share information about myself, my skills, my projects, and the services & offer as a web developer,also includes a contact section so people can reach me.",
+      "link": "https://jubairahammedjubu.github.io/My-Protfolio/",
+      "type": "personal_project"
+    }
+  ]
