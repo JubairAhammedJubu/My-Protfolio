@@ -1190,6 +1190,221 @@ textarea:valid~.line1:before {
 }
 
 
+/* education */
+#education {
+  padding: 4rem 2rem;
+  width: 100%;
+  max-width: 930px;
+  margin: auto;
+}
+
+#education .part_1 h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-white);
+  position: relative;
+}
+
+#education .part_1 h2:after{
+  content: "- what i have gain -";
+  font-size: 15px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--theme-color-dark);
+  
+}
+
+/* ================= TIMELINE CONTAINER ================= */
+
+.vertical-timeline {
+  position: relative;
+  padding: 1rem 0;
+}
+
+/* CENTER LINE */
+.vertical-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: var(--theme-color-light);
+  transform: translateX(-50%);
+}
+
+/* ================= EACH ITEM ================= */
+
+.timeline-element {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+/* LEFT SIDE */
+.timeline-element:nth-child(odd) {
+  left: 0;
+  transform: translateX(-120px);
+  text-align: right;
+}
+
+/* RIGHT SIDE */
+.timeline-element:nth-child(even) {
+  left: 50%;
+  transform: translateX(120px);
+  text-align: left;
+}
+
+/* SHOW ANIMATION */
+.timeline-element.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ================= ICON ================= */
+
+.timeline-icon {
+  position: absolute;
+  top: 25px;
+  width: 35px;
+  height: 35px;
+  background: #AE944F;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* ICON POSITION */
+.timeline-element:nth-child(odd) .timeline-icon {
+  right: -18px;
+}
+
+.timeline-element:nth-child(even) .timeline-icon {
+  left: -18px;
+}
+
+/* ================= CONTENT BOX ================= */
+
+.timeline-content {
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.timeline-content:hover {
+  box-shadow: var(--box-shadow);
+}
+
+/* ARROWS */
+.timeline-content::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  border: 10px solid transparent;
+}
+
+/* LEFT ARROW */
+.timeline-element:nth-child(odd) .timeline-content::after {
+  right: -20px;
+  border-left-color: #222;
+}
+
+/* RIGHT ARROW */
+.timeline-element:nth-child(even) .timeline-content::after {
+  left: -20px;
+  border-right-color: #222;
+}
+
+/* ================= TEXT ================= */
+
+.main-badge {
+  display: inline-block;
+  background: var(--theme-color-light);
+  color: black;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+  color: var(--theme-color-dark);
+  margin: 5px 0;
+}
+
+.timeline-content h4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tech-stack {
+  margin-top: 10px;
+}
+
+.tech-stack span {
+  display: inline-block;
+  background: #333;
+  padding: 5px 5px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.date {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: lime;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+  .vertical-timeline::before {
+    left: 35px;
+  }
+
+    #education {
+      padding: 2rem 2rem;
+    }
+
+    .timeline-element {
+      width: 100%;
+      left: 17px !important;
+      transform: translateY(-60px) !important;
+      opacity: 0;
+      transition: all 2.5s ease;
+      text-align: left !important;
+      padding-left: 50px;
+    }
+  
+    .timeline-element.show {
+      transform: translateY(0) !important;
+      opacity: 1;
+    }
+
+  .timeline-icon {
+    left: 0 !important;
+    right: auto !important;
+  }
+
+  .timeline-content::after {
+    left: -20px !important;
+    right: auto !important;
+    border-right-color: #222 !important;
+    border-left-color: transparent !important;
+  }
+}
+
+
 /*sidebar items*/
 #sidebar {
   display: none;

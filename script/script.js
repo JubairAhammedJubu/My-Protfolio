@@ -251,5 +251,35 @@ async function countProjects() {
 
 
 
+const timelineItems = document.querySelectorAll(".timeline-element");
+const educationSection = document.querySelector("#education");
 
+let hasPlayed = false;
+
+function handleTimelineAnimation() {
+  const rect = educationSection.getBoundingClientRect();
+
+  const isVisible = rect.top < window.innerHeight * 0.55 && rect.bottom > 100;
+
+  if (isVisible && !hasPlayed) {
+    hasPlayed = true;
+
+    timelineItems.forEach((item, i) => {
+      setTimeout(() => {
+        item.classList.add("show");
+      }, i * 200);
+    });
+  }
+
+  if (!isVisible) {
+    hasPlayed = false;
+
+    timelineItems.forEach((item) => {
+      item.classList.remove("show");
+    });
+  }
+}
+
+window.addEventListener("scroll", handleTimelineAnimation);
+window.addEventListener("load", handleTimelineAnimation);
 
