@@ -207,7 +207,7 @@ main {
 }
 
 #header .logo {
-  flex-basis: 400px;
+  flex-basis: 430px;
 }
 
 #header .logo h1 {
@@ -256,20 +256,67 @@ main {
 }
 
 #section_1 .part_1 {
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-basis: 55%;
   width: 400px;
   height: 500px;
   text-align: left;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%);
+
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+
+  background:
+    
+    var(--main-bg) padding-box,
+    
+    var(--gradient-border) border-box,
+    
+    var(--main-bg) border-box;
+
+  background-position: center center;
+
+  animation: bg-spin 3s linear infinite;
+
 }
 
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+&:hover {
+  animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+
+
+
 #section_1 .part_1 img {
-  width: 80%;
+  width: 85%;
   height: 100%;
 }
 
 #section_1 .part_2 {
-  padding: 5rem 2rem 2rem 0rem;
+  padding: 4rem 2rem 2rem 0rem;
   flex-basis: 45%;
   height: 500px;
   margin-right: auto;
@@ -318,7 +365,7 @@ a {
   border-radius: 10px;
   background-color: var(--body-bg-1);
   color: var(--text-white);
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 1.5rem;
   font-size: 20px;
   cursor: pointer;
   transition: 0.2s linear;
@@ -408,8 +455,9 @@ a {
 }
 
 #about .part_2 .image_part img {
-  width: 100%;
+  width: 95%;
   height: 100%;
+  border-radius: 15px;
   filter: grayscale(1);
   cursor: pointer;
   transition: all 0.2s linear;
@@ -597,9 +645,10 @@ a {
 
 #skills .part_2 .skills {
   background-color: #222;
-  padding: 1rem;
+  padding: 1.5rem;
   cursor: pointer;
   transition: all linear 0.5s;
+  border-radius: 15px;
 }
 
 .skills:hover {
@@ -613,6 +662,13 @@ a {
 .skill-name {
   margin-top: 2rem;
   font-weight: bold;
+}
+
+.skill-name img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  
 }
 
 .skill-bar {
@@ -683,7 +739,8 @@ a {
   width: 930px;
   margin-top: 3rem;
   background-color: #222;
-  padding: 1rem;
+  padding: 1.5rem;
+  border-radius: 15px;
   cursor: pointer;
   transition: all linear 0.5s;
 }
@@ -952,6 +1009,11 @@ a {
   transition: all 0.2s linear;
 }
 
+#projects .part_2 .container .p_cards .info .btn_part {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 #projects .part_2 .container .p_cards .info .btn {
   margin-top: 12px;
   font-size: 14px;
@@ -961,7 +1023,7 @@ a {
 
 /* Contact Part */
 #contact {
-  padding: 3rem 2rem;
+  padding: 3rem 4rem;
   background-color: var(--body-bg-2);
   width: 100%;
   height: 100%;
@@ -1216,7 +1278,6 @@ textarea:valid~.line1:before {
   
 }
 
-/* ================= TIMELINE CONTAINER ================= */
 
 .vertical-timeline {
   position: relative;
@@ -1234,8 +1295,6 @@ textarea:valid~.line1:before {
   background: var(--theme-color-light);
   transform: translateX(-50%);
 }
-
-/* ================= EACH ITEM ================= */
 
 .timeline-element {
   position: relative;
@@ -1265,7 +1324,6 @@ textarea:valid~.line1:before {
   transform: translateX(0);
 }
 
-/* ================= ICON ================= */
 
 .timeline-icon {
   position: absolute;
@@ -1290,12 +1348,11 @@ textarea:valid~.line1:before {
   left: -18px;
 }
 
-/* ================= CONTENT BOX ================= */
 
 .timeline-content {
   background: #222;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 10px;
   position: relative;
   transition: 0.3s;
 }
@@ -1324,7 +1381,6 @@ textarea:valid~.line1:before {
   border-right-color: #222;
 }
 
-/* ================= TEXT ================= */
 
 .main-badge {
   display: inline-block;
@@ -1365,7 +1421,6 @@ textarea:valid~.line1:before {
   color: lime;
 }
 
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 800px) {
   .vertical-timeline::before {
@@ -1718,12 +1773,12 @@ textarea:valid~.line1:before {
   }
 
   #section_1 .part_1 {
-    width: 100%;
+    width: 94%;
     text-align: center;
   }
 
   #section_1 .part_1 img {
-    width: 90%;
+    width: 95%;
   }
 
 

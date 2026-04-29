@@ -1,4 +1,3 @@
-
 //A Function to ease retrieval of DOM elements
 const elem = (x) => document.getElementById(x);
 
@@ -11,7 +10,6 @@ var nameInput = elem("nameInput");
 var nameBtn = elem("nameBtn");
 
 function loader() {
-
   let c = 0;
 
   let count = setInterval(function () {
@@ -19,18 +17,15 @@ function loader() {
     counter.innerText = c;
 
     if (c === 100) {
-
       clearInterval(count);
       counter.classList.add("hide");
       text.classList.add("fadeIn");
       text.classList.add("fadeOut");
 
-      setTimeout(function () {        
+      setTimeout(function () {
         nameBox.style.display = "block";
       }, 1000);
-
     }
-
   }, 40);
 }
 
@@ -184,16 +179,22 @@ function showProjects(projects) {
       </div>
 
       <div class="btn_part">
-        <a href="${project.link}" target="_blank" title="${project.title}">
-          <button class="btn">
-          ${
-            project.type === "mobile"
-              ? 'Download <i class="fa fa-android"></i>'
-              : 'View Live <i class="fa fa-globe"></i>'
-          }
-          </button>
-        </a>
-      </div>
+  <!-- GitHub Button -->
+  <a href="${project.github}" target="_blank" class="github-btn" title="View Code">
+   <button class="btn"> <i class="fa-brands fa-github"></i></button>
+  </a>
+
+  <!-- Main Button -->
+  <a href="${project.link}" target="_blank">
+    <button class="btn">
+      ${
+        project.type === "mobile"
+          ? 'Download <i class="fa-brands fa-android"></i>'
+          : 'View Live <i class="fa-solid fa-eye"></i>'
+      }
+    </button>
+  </a>
+</div>
 
     </div>
     
@@ -205,7 +206,7 @@ function showProjects(projects) {
 
 // Filter handler
 function handleFilter(elem, type) {
-    loadProjects(type, elem);
+  loadProjects(type, elem);
 }
 
 // Project Counter
@@ -246,10 +247,7 @@ async function countProjects() {
   options[2].innerText = `API's (${api_projects}+)`;
   options[3].innerText = `Mobile (${mobile_projects}+)`;
   options[4].innerText = `Personal Projects (${personal_projects}+)`;
-
-};
-
-
+}
 
 const timelineItems = document.querySelectorAll(".timeline-element");
 const educationSection = document.querySelector("#education");
@@ -282,4 +280,3 @@ function handleTimelineAnimation() {
 
 window.addEventListener("scroll", handleTimelineAnimation);
 window.addEventListener("load", handleTimelineAnimation);
-
