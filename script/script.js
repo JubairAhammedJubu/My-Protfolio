@@ -280,3 +280,66 @@ function handleTimelineAnimation() {
 
 window.addEventListener("scroll", handleTimelineAnimation);
 window.addEventListener("load", handleTimelineAnimation);
+
+// ================= EMAIL JS =================
+
+emailjs.init("BNSvCYPM7GWPZASmT");
+
+const contact_form = document.querySelector(".cform");
+const send_btn = document.querySelector(".send_btn");
+
+contact_form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  // Button Loading
+  send_btn.disabled = true;
+  send_btn.innerText = "Sending...";
+
+  // Send Email
+  emailjs
+    .sendForm("service_xqedvlf", "template_xthr5ou", contact_form)
+
+    .then(() => {
+      Toastify({
+        text: "✅ Message Sent Successfully! 🚀",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        style: {
+          background: "linear-gradient(90deg,#818cf8,#a855f7)",
+          color: "#fff",
+          borderRadius: "8px",
+          maxWidth: "90%",
+        },
+      }).showToast();
+
+      // Reset Form
+      contact_form.reset();
+
+      // Restore Button
+      send_btn.disabled = false;
+
+      send_btn.innerHTML = 'Send Message <i class="fa fa-arrow-right"></i>';
+    })
+
+    .catch((error) => {
+      Toastify({
+        text: "🚨 Failed to send message ❌",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        style: {
+          background: "linear-gradient(90deg,#f472b6,#f43f5e)",
+          color: "#fff",
+          maxWidth: "90%",
+          borderRadius: "8px",
+        },
+      }).showToast();
+
+      console.log(error);
+
+      send_btn.disabled = false;
+
+      send_btn.innerHTML = 'Send Message <i class="fa fa-arrow-right"></i>';
+    });
+});
