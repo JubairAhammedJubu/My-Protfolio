@@ -265,7 +265,7 @@ function handleTimelineAnimation() {
     timelineItems.forEach((item, i) => {
       setTimeout(() => {
         item.classList.add("show");
-      }, i * 200);
+      }, i * 180);
     });
   }
 
